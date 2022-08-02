@@ -1,0 +1,68 @@
+{
+  "development": {
+    "port": "3000",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_analytics_development",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "mongo": {
+      "host": "mongodb",
+      "port": "27017",
+      "db": "analytics"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    }
+  },
+  "test": {
+    "port": "3001",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_analytics_test",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "mongo": {
+      "host": "mongodb",
+      "port": "27017",
+      "db": "analytics"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    }
+  },
+  "production": {
+    "port": "3000",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_analytics_production",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "mongo": {
+      "host": "mongodb",
+      "port": "27017",
+      "db": "analytics"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    }
+  }
+}
